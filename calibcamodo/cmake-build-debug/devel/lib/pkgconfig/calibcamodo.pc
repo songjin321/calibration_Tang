@@ -1,0 +1,8 @@
+prefix=/home/songjin/Project/catkin_ws/src/calibcamodo/cmake-build-debug/devel
+
+Name: calibcamodo
+Description: Description of calibcamodo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/songjin/Project/catkin_ws/src/calibcamodo/cmake-build-debug/devel/lib 
+Requires: 

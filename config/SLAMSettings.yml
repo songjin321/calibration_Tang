@@ -1,0 +1,103 @@
+%YAML:1.0
+
+#### Settings for `r4-007` dataset, revise for specific dataset accordingly. #####
+
+# For depth filter. Useless now.
+depth_filter_thresh: 0.01
+depth_filter_avrg_count: 5
+depth_filter_converge_count: 5
+
+# Accepted feature depth bounds
+upper_depth: 10000.0
+lower_depth: 300.0
+
+# for feature detection
+scale_facotr: 1.2
+max_level: 5
+max_feature_num: 400
+feature_sigma: 0.5
+
+# Useless now.
+frame_num: 4
+
+# How many loops in optimizer iteration
+local_iter: 11
+global_iter: 12
+
+# 1 for print debug info, 0 for not
+local_print: 0
+global_print: 0
+
+# 1 for verbose, 0 for non-verbose
+local_verbose: 0
+global_verbose: 0
+
+# 1 for BA with 3d MapPoint constraint, 
+# 0 for BA with 2d MapPoint constraint on images.
+## Please keep it 0 now
+local_3d: 0
+
+# Robust kernel for 2d MapPoint constraint
+th_huber2: 5.991 
+
+# Robust kernel for 3d MapPoint constraint
+th_huber2_3d: 10000
+
+# For odometry uncertanty
+odo_x_uncertain: 0.01
+odo_y_uncertain: 0.01
+odo_theta_uncertain: 0.01
+
+# For odometry noise (in a moment) (unit: mm, rad)
+odo_x_steady_noise: 1
+odo_y_steady_noise: 1
+odo_theta_steady_noise: 0.005
+
+#server ip
+ip: "10.10.10.91"
+
+# Tracking frequency
+fps: 30
+
+# How many images
+img_num: 13523
+
+#map publish scale ratio
+mappub_scale_ratio: 300
+
+# For map storage
+## 1 if use previously saved map, 0 if not
+use_prev_map: 1
+## 1 if save map when exit, o if not
+save_new_map: 0
+## 1 if disable SLAM and do localization only (use_prev_map must be 1), 0 if do SLAM
+localization_only: 1
+## map file config
+read_map_file_name: "odoslam.map"
+read_map_file_path: "/home/vn/dataset/SLAM/Save_Map/"
+read_simple_map_file_name: "simple_odoslam.map"
+write_map_file_name: "odoslam.map"
+write_map_file_path: "/home/vn/dataset/SLAM/Save_Map/"
+write_simple_map_file_name: "simple_odoslam.map"
+write_traj_file_name: "odoslam_kf_trajectory.txt"
+write_traj_file_path: "/home/vn/dataset/SLAM/Save_Map/"
+
+## img/odo data save path
+# slam or localizationz
+img_odo_save_path: "/home/vn/dataset/SLAM/image/"
+
+#for calibration only
+calib_save_odo_path: "/home/vn/dataset/Calibration/rec/"
+calib_save_odo_name: "Odo.rec"
+calib_save_img_path: "/home/vn/dataset/Calibration/image/"
+
+img_id_local_st: 0
+
+gm_vcl_num_min_match_mp: 12 
+gm_vcl_num_min_match_kp: 24
+gm_vcl_ratio_min_match_kp: 0.05
+
+gm_dcl_min_kfid_offset: 20
+gm_dcl_min_score_best: 0.05
+
+

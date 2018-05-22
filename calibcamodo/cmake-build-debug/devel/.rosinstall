@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/songjin/Project/catkin_ws/src/calibcamodo/cmake-build-debug/devel/setup.sh

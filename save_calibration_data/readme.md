@@ -3,7 +3,8 @@
 订阅ｔｏｐｉｃ
 /camera/image_raw
 /odom
-在/home/songjin目录下应当有
+
+在/home/songjin目录下应当有,图片应当保存为ｂｍｐ格式
 
 /calibration_dataset
 
